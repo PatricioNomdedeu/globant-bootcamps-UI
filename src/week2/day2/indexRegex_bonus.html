@@ -82,7 +82,7 @@
 
      function giveMeThosePoints(user){
         var valid = false;
-        var passRegex = new RegExp((user.username) + ":" + (user.password) +"$");  
+        var passRegex = new RegExp("^"+ (user.username) + ":" + (user.password) +"$");  
         while (valid==false) {
                 result = prompt("Enter your User Name followed by ':' and your password and you won't regret giving me those bonus points =)", "@username:123abc"),
                 valid = result.match(passRegex);
